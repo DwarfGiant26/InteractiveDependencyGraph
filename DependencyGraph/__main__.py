@@ -1,12 +1,20 @@
 # Parse Arguments
 # Call Dependency Crawler
-# Call Create graph
+
 
 import ast
 
 print(ast.dump(ast.parse("""
+import math
+import numpy
+
 @something
 def my_function(fname, lname):
   print(fname + " " + lname)
   print(fname)
-"""), indent=4))
+""")))
+
+
+# Call Create graph
+# create list of dependencies for mermaid -> [[<source>,<dest>,(<source_type>,<dest_type>)],...] 
+# type -> class, function, or file
