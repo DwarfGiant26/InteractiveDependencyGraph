@@ -1,10 +1,10 @@
 # Parse Arguments
 # Call Dependency Crawler
 
-
-import ast
 from http.server import HTTPServer,BaseHTTPRequestHandler
 import view
+import mermaid
+import dependency_crawler
 
 class ReqHandler(BaseHTTPRequestHandler):
   def do_GET(self):
@@ -15,7 +15,8 @@ class ReqHandler(BaseHTTPRequestHandler):
     # create html body
     with open("graph.html","r") as f:
       html_str = f.read()
-      html_str = view.replace_variables(html_str,)
+      root_node = dependency_crawler.bfs_get_file_nodes("__main__.py")
+      html_str = view.replace_variables(html_str,graph=mermaid.to_mermaid(root_node))
       self.wfile.write(html_str.encode("utf-8"))
 
 def run(port, address, server_class=HTTPServer, handler_class=ReqHandler):

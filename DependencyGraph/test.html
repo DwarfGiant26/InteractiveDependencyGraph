@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        Here is a mermaid diagram:
+        <div class="mermaid">
+            graph TD 
+            /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/view.py --> __main__.py
+/home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/mermaid.py --> __main__.py
+/home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/dependency_crawler.py --> __main__.py
+/usr/lib/python3.8/string.py --> /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/dependency_crawler.py
+built-in --> /usr/lib/python3.8/string.py
+/usr/lib/python3.8/re.py --> /usr/lib/python3.8/string.py
+/usr/lib/python3.8/enum.py --> /usr/lib/python3.8/re.py
+/usr/lib/python3.8/sre_compile.py --> /usr/lib/python3.8/re.py
+/usr/lib/python3.8/sre_parse.py --> /usr/lib/python3.8/re.py
+/usr/lib/python3.8/functools.py --> /usr/lib/python3.8/re.py
+/usr/lib/python3.8/copyreg.py --> /usr/lib/python3.8/re.py
+built-in --> /usr/lib/python3.8/sre_compile.py
+/usr/lib/python3.8/sre_parse.py --> /usr/lib/python3.8/sre_compile.py
+
+        </div>
+    </body>
+</html>
