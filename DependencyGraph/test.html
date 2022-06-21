@@ -3,20 +3,190 @@
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         Here is a mermaid diagram:
         <div class="mermaid">
-            graph TD 
+            flowchart TB 
             /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/view.py --> __main__.py
+subgraph __main__.py
+Class:ReqHandler
+Function:run
+end
 /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/mermaid.py --> __main__.py
+subgraph __main__.py
+Class:ReqHandler
+Function:run
+end
 /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/dependency_crawler.py --> __main__.py
+subgraph __main__.py
+Class:ReqHandler
+Function:run
+end
 /usr/lib/python3.8/string.py --> /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/dependency_crawler.py
+subgraph /home/alan/coding/Compsci/InteractiveDependencyGraph/DependencyGraph/dependency_crawler.py
+Function:bfs_get_file_nodes
+end
 built-in --> /usr/lib/python3.8/string.py
+subgraph /usr/lib/python3.8/string.py
+Class:_TemplateMetaclass
+Class:Template
+Class:Formatter
+Function:capwords
+end
 /usr/lib/python3.8/re.py --> /usr/lib/python3.8/string.py
+subgraph /usr/lib/python3.8/string.py
+Class:_TemplateMetaclass
+Class:Template
+Class:Formatter
+Function:capwords
+end
 /usr/lib/python3.8/enum.py --> /usr/lib/python3.8/re.py
+subgraph /usr/lib/python3.8/re.py
+Class:RegexFlag
+Class:Scanner
+Function:match
+Function:fullmatch
+Function:search
+Function:sub
+Function:subn
+Function:split
+Function:findall
+Function:finditer
+Function:compile
+Function:purge
+Function:template
+Function:escape
+Function:_compile
+Function:_compile_repl
+Function:_expand
+Function:_subx
+Function:_pickle
+end
 /usr/lib/python3.8/sre_compile.py --> /usr/lib/python3.8/re.py
+subgraph /usr/lib/python3.8/re.py
+Class:RegexFlag
+Class:Scanner
+Function:match
+Function:fullmatch
+Function:search
+Function:sub
+Function:subn
+Function:split
+Function:findall
+Function:finditer
+Function:compile
+Function:purge
+Function:template
+Function:escape
+Function:_compile
+Function:_compile_repl
+Function:_expand
+Function:_subx
+Function:_pickle
+end
 /usr/lib/python3.8/sre_parse.py --> /usr/lib/python3.8/re.py
+subgraph /usr/lib/python3.8/re.py
+Class:RegexFlag
+Class:Scanner
+Function:match
+Function:fullmatch
+Function:search
+Function:sub
+Function:subn
+Function:split
+Function:findall
+Function:finditer
+Function:compile
+Function:purge
+Function:template
+Function:escape
+Function:_compile
+Function:_compile_repl
+Function:_expand
+Function:_subx
+Function:_pickle
+end
 /usr/lib/python3.8/functools.py --> /usr/lib/python3.8/re.py
+subgraph /usr/lib/python3.8/re.py
+Class:RegexFlag
+Class:Scanner
+Function:match
+Function:fullmatch
+Function:search
+Function:sub
+Function:subn
+Function:split
+Function:findall
+Function:finditer
+Function:compile
+Function:purge
+Function:template
+Function:escape
+Function:_compile
+Function:_compile_repl
+Function:_expand
+Function:_subx
+Function:_pickle
+end
 /usr/lib/python3.8/copyreg.py --> /usr/lib/python3.8/re.py
+subgraph /usr/lib/python3.8/re.py
+Class:RegexFlag
+Class:Scanner
+Function:match
+Function:fullmatch
+Function:search
+Function:sub
+Function:subn
+Function:split
+Function:findall
+Function:finditer
+Function:compile
+Function:purge
+Function:template
+Function:escape
+Function:_compile
+Function:_compile_repl
+Function:_expand
+Function:_subx
+Function:_pickle
+end
 built-in --> /usr/lib/python3.8/sre_compile.py
+subgraph /usr/lib/python3.8/sre_compile.py
+Function:_combine_flags
+Function:_compile
+Function:_compile_charset
+Function:_optimize_charset
+Function:_mk_bitmap
+Function:_bytes_to_codes
+Function:_simple
+Function:_generate_overlap_table
+Function:_get_iscased
+Function:_get_literal_prefix
+Function:_get_charset_prefix
+Function:_compile_info
+Function:isstring
+Function:_code
+Function:_hex_code
+Function:dis
+Function:compile
+end
 /usr/lib/python3.8/sre_parse.py --> /usr/lib/python3.8/sre_compile.py
+subgraph /usr/lib/python3.8/sre_compile.py
+Function:_combine_flags
+Function:_compile
+Function:_compile_charset
+Function:_optimize_charset
+Function:_mk_bitmap
+Function:_bytes_to_codes
+Function:_simple
+Function:_generate_overlap_table
+Function:_get_iscased
+Function:_get_literal_prefix
+Function:_get_charset_prefix
+Function:_compile_info
+Function:isstring
+Function:_code
+Function:_hex_code
+Function:dis
+Function:compile
+end
 
         </div>
     </body>

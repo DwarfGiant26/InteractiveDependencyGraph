@@ -17,6 +17,10 @@ class ReqHandler(BaseHTTPRequestHandler):
       html_str = f.read()
       root_node = dependency_crawler.bfs_get_file_nodes("__main__.py")
       html_str = view.replace_variables(html_str,graph=mermaid.to_mermaid(root_node))
+      
+      with open("test.html","w") as test:
+        test.write(html_str)
+        
       self.wfile.write(html_str.encode("utf-8"))
 
 def run(port, address, server_class=HTTPServer, handler_class=ReqHandler):
